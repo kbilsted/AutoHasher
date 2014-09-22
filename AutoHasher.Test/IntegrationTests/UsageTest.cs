@@ -19,8 +19,8 @@
 
 using System.Collections.Generic;
 
-using Autohash;
-using Autohash.Attributes;
+using AutoHash;
+using AutoHash.Attributes;
 
 using NUnit.Framework;
 
@@ -29,6 +29,7 @@ namespace AutoHash.Test.IntegrationTests
   class Foo
   {
     internal string field1 = "foo";
+    internal string field2 = null;
     internal int bar = 42;
     internal List<int> l1 = null;
     internal List<int> l2 = new List<int>() { 0, 0 };
@@ -51,6 +52,7 @@ namespace AutoHash.Test.IntegrationTests
       var foo = new Foo();
       int expected = 0;
       expected = (expected * 397) ^ foo.field1.GetHashCode();
+      expected = (expected * 397); // field2 is null
       expected = (expected * 397) ^ foo.bar.GetHashCode();
       expected = (expected * 397) ^ foo.l2.Count.GetHashCode();
  

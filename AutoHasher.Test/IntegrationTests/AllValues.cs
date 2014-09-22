@@ -19,12 +19,11 @@
 
 using AutoHash.Test.Holders;
 
+using System;
+using System.Collections.Generic;
+
 namespace AutoHash.Test.IntegrationTests
 {
-  using System;
-  using System.Collections.Generic;
-
-  using Autohash;
 
   class AllValues : Holder
   {

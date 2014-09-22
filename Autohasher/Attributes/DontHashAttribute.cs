@@ -19,7 +19,7 @@
 
 using System;
 
-namespace Autohash.Attributes
+namespace AutoHash.Attributes
 {
   /// <summary>
   /// Appply this attribute to fields that should not be included in the hash computation.

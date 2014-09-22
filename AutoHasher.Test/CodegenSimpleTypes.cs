@@ -19,7 +19,7 @@
 
 using System;
 
-using Autohash;
+using AutoHash;
 
 using AutoHash.Test.Holders;
 using AutoHash.Test.Util;

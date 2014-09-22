@@ -19,7 +19,7 @@
   using System;
   using System.Collections.Generic;
 
-namespace Autohash
+namespace AutoHash
 {
   /// <summary>
   /// Automatic code generation of GetHashCode computations.

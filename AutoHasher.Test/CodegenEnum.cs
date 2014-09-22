@@ -21,7 +21,7 @@ using AutoHash.Test.Holders;
 
 namespace AutoHash.Test
 {
-  using Autohash;
+  using AutoHash;
 
   using AutoHash.Test.Util;
 

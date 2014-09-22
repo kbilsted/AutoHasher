@@ -48,6 +48,7 @@
     <Compile Include="CodegenSimpleTypes.cs" />
     <Compile Include="Holders\SimpleValuesHolder.cs" />
     <Compile Include="IntegrationTests\UsageTest.cs" />
+    <Compile Include="IntegrationTests\WrongUsageTest.cs" />
     <Compile Include="Util\CompilerTest.cs" />
     <Compile Include="Holders\EnumHolder.cs" />
     <Compile Include="Holders\Holder.cs" />

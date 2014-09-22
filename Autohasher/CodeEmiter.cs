@@ -23,7 +23,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Autohash
+namespace AutoHash
 {
   /// <summary>
   /// Emit code for each field of a type.

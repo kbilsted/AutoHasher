@@ -1,4 +1,4 @@
-﻿namespace Autohash
+﻿namespace AutoHash
 {
   /// <summary>
   /// The DebugStats.

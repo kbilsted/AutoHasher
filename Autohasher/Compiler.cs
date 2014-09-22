@@ -17,7 +17,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace Autohash
+namespace AutoHash
 {
   using System;
   using System.Collections.Generic;
@@ -25,7 +25,7 @@ namespace Autohash
   using System.Linq.Expressions;
   using System.Reflection;
 
-  using Autohash.Attributes;
+  using AutoHash.Attributes;
 
   internal delegate int HashingMethod(object source);
 

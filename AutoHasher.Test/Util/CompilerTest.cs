@@ -17,8 +17,6 @@
 // specific language governing permissions and limitations
 // under the License.
 
-using Autohash;
-
 using NUnit.Framework;
 
 namespace AutoHash.Test.Util

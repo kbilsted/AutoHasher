@@ -17,7 +17,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace Autohash
+namespace AutoHash
 {
   /// <summary>
   /// Static class acts as a dictionary only with faster lookup where T is the key

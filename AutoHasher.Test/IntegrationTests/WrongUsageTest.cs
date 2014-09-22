@@ -1,4 +1,4 @@
-// Copyright 2014 Kasper B. Graversen
+﻿// Copyright 2014 Kasper B. Graversen
 // 
 // Licensed to the Apache Software Foundation (ASF) under one
 // or more contributor license agreements.  See the NOTICE file
@@ -17,32 +17,33 @@
 // specific language governing permissions and limitations
 // under the License.
 
-using System.Collections.Generic;
-
 using AutoHash;
 
-namespace AutoHash.Test.Holders
+using NUnit.Framework;
+
+namespace AutoHash.Test.IntegrationTests
 {
-  class ICollectionClass : Holder
+  [TestFixture]
+  class WrongUsageTest
   {
-    public List<int> IColl1, IColl2;
-
-    public string[] StringArr;
-
-
-    public override int FasterGetHashCode()
+    [Test]
+    public void ReferenceTypeIsImportant( )
     {
-      return Cache<ICollectionClass>.Get()(this);
-    }
+      A a = new A();
+      object oa = new A();
 
-    public override int ExpectedFromCodegen()
-    {
-      int hashcode = 0;
-      if (this.IColl1 != null) hashcode = (hashcode * 397) ^ this.IColl1.Count;
-      if (this.IColl2 != null) hashcode = (hashcode * 397) ^ this.IColl2.Count;
-      if (this.StringArr != null) hashcode = (hashcode * 397) ^ this.StringArr.Length;
-
-      return hashcode;
+      Assert.AreNotEqual(a.GetHashCode(), AutoHasher.GetHashCode(oa));
     }
   }
+
+  class A
+  {
+    int i = 2;
+
+    public override int GetHashCode()
+    {
+      return AutoHasher.GetHashCode(this);
+    }
+  }
+
 }
