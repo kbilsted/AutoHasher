@@ -17,17 +17,15 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test
+using System.Collections.Generic;
+
+using AutoHash.Test.Holders;
+using AutoHash.Test.Util;
+
+using NUnit.Framework;
+
+namespace AutoHash.Test
 {
-  using System.Collections.Generic;
-
-  using Autohash;
-
-  using AutoHasher.Test.Holders;
-  using AutoHasher.Test.Util;
-
-  using NUnit.Framework;
-
   [TestFixture]
   internal class CompilerICollection : CompilerTest
   {

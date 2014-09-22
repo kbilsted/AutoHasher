@@ -17,18 +17,18 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+using AutoHash.Test.Holders;
+using AutoHash.Test.IntegrationTests;
+using AutoHash.Test.Util;
+
+using NUnit.Framework;
+
+namespace AutoHash.Test
 {
-  using System;
-  using System.Collections.Generic;
-  using System.Linq;
-
-  using AutoHasher.Test.Holders;
-  using AutoHasher.Test.IntegrationTests;
-  using AutoHasher.Test.Util;
-
-  using NUnit.Framework;
-
   [TestFixture]
   internal class TimingTests
   {

@@ -17,11 +17,11 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test.Util
-{
-  using System;
-  using System.Diagnostics;
+using System;
+using System.Diagnostics;
 
+namespace AutoHash.Test.Util
+{
   static class Timer
   {
     public static long TimeInMillis(Action code)

@@ -24,10 +24,9 @@ namespace Autohash
   /// <summary>
   /// Automatic code generation of GetHashCode computations.
   /// </summary>
-  public class AutoHasher
+  public static class AutoHasher
   {
-
-    public int GetHashCode<T>(T source)
+    public static int GetHashCode<T>(T source)
     {
       var mth = Cache<T>.Get();
       return mth(source);

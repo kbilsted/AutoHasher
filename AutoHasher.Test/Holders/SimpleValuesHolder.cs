@@ -18,7 +18,8 @@
 // under the License.
 
 using Autohash;
-namespace AutoHasher.Test.Holders
+
+namespace AutoHash.Test.Holders
 {
 
   class SimpleValuesHolder : Holder

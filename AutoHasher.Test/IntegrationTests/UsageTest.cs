@@ -17,45 +17,46 @@
 // specific language governing permissions and limitations
 // under the License.
 
-using Autohash;
+using System.Collections.Generic;
 
-using AutoHash.Test.Util;
+using Autohash;
+using Autohash.Attributes;
 
 using NUnit.Framework;
 
-namespace AutoHash.Test
+namespace AutoHash.Test.IntegrationTests
 {
+  class Foo
+  {
+    internal string field1 = "foo";
+    internal int bar = 42;
+    internal List<int> l1 = null;
+    internal List<int> l2 = new List<int>() { 0, 0 };
+    [DontHash]
+    internal string nonHashed = "boo";
+    
+    public override int GetHashCode()
+    {
+      return AutoHasher.GetHashCode(this);
+    }
+  }
+
+
   [TestFixture]
-  class InheritanceTest : CompilerTest
+  class UsageTest
   {
     [Test]
-    public void SimpleInheritance()
+    public void TestUsage()
     {
-      Compiler.Logging = false;
-      var sut = new B();
-
-      Assert.AreEqual(sut.GetHashCode(), compiler.CreateHashingMethod<B>()(sut));
+      var foo = new Foo();
+      int expected = 0;
+      expected = (expected * 397) ^ foo.field1.GetHashCode();
+      expected = (expected * 397) ^ foo.bar.GetHashCode();
+      expected = (expected * 397) ^ foo.l2.Count.GetHashCode();
+ 
+      int actual = foo.GetHashCode();
+      
+      Assert.AreEqual(expected, actual);
     }
-
-
-    class A
-    {
-      internal int a = 100;
-    }
-
-    class B : A
-    {
-      internal int b = 100;
-
-      public override int GetHashCode()
-      {
-        var hashCode = 0;
-        hashCode = (hashCode * 397) ^ a;
-        hashCode = (hashCode * 397) ^ b;
-        return hashCode;
-      }
-    }
-
-
   }
 }

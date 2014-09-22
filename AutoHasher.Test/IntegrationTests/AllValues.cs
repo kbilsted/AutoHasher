@@ -17,15 +17,14 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test.IntegrationTests
+using AutoHash.Test.Holders;
+
+namespace AutoHash.Test.IntegrationTests
 {
   using System;
   using System.Collections.Generic;
 
   using Autohash;
-
-  using AutoHasher.Test.Holders;
-
 
   class AllValues : Holder
   {

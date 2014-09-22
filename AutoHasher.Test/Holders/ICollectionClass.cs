@@ -17,12 +17,12 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test.Holders
+using System.Collections.Generic;
+
+using Autohash;
+
+namespace AutoHash.Test.Holders
 {
-  using System.Collections.Generic;
-
-  using Autohash;
-
   class ICollectionClass : Holder
   {
     public List<int> IColl1, IColl2;

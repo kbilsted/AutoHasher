@@ -17,12 +17,13 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test
+using AutoHash.Test.Holders;
+
+namespace AutoHash.Test
 {
   using Autohash;
 
-  using AutoHasher.Test.Holders;
-  using AutoHasher.Test.Util;
+  using AutoHash.Test.Util;
 
   using NUnit.Framework;
 

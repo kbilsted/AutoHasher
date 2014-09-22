@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohasher", "Autohasher\Autohasher.csproj", "{EC4842A5-AD00-4F1D-8C2E-AE52CEB2198A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autohash", "Autohasher\Autohash.csproj", "{EC4842A5-AD00-4F1D-8C2E-AE52CEB2198A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoHasher.Test", "AutoHasher.Test\AutoHasher.Test.csproj", "{85F44860-2BF7-44EF-85F4-823896688601}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoHash.Test", "AutoHasher.Test\AutoHash.Test.csproj", "{85F44860-2BF7-44EF-85F4-823896688601}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EC4842A5-AD00-4F1D-8C2E-AE52CEB2198A} = {EC4842A5-AD00-4F1D-8C2E-AE52CEB2198A}
 	EndProjectSection

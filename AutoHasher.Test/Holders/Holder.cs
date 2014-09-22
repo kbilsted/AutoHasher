@@ -17,10 +17,10 @@
 // specific language governing permissions and limitations
 // under the License.
 
-namespace AutoHasher.Test.Holders
-{
-  using Autohash;
+using Autohash;
 
+namespace AutoHash.Test.Holders
+{
   abstract class Holder
   {
 

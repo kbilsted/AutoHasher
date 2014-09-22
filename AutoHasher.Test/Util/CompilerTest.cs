@@ -21,7 +21,7 @@ using Autohash;
 
 using NUnit.Framework;
 
-namespace AutoHasher.Test.Util
+namespace AutoHash.Test.Util
 {
   abstract class CompilerTest
   {
