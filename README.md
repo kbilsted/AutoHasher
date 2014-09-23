@@ -1,7 +1,7 @@
 # AutoHasher
 
 
-Automatic generation of GetHashCode() methods
+Automatic generation of GetHashCode() methods using on the fly run-time code generation.
 
 
 # 1. Advantages
