@@ -3,6 +3,7 @@
 
 Automatic generation of GetHashCode() methods using on the fly run-time code generation.
 
+Build server status: [![Build status](https://ci.appveyor.com/api/projects/status/3ip6tk8i3s277474/branch/master?svg=true)](https://ci.appveyor.com/project/kbilsted/autohasher/branch/master)
 
 # 1. Advantages
 
