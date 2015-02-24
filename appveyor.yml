@@ -1,0 +1,31 @@
+branches:
+  only:
+    - master
+
+version: 1.0.{build}-rc
+
+configuration: Debug
+
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "{version}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
+
+cache:
+  - packages
+
+
+nuget:
+  disable_publish_on_pr: true
+  
+install:
+    - nuget restore
+
+build:
+  project: Autohasher.sln
+#  verbosity: minimal
+  verbosity: detailed
+ 
+
