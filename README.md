@@ -1,9 +1,13 @@
 # AutoHasher
 
+[![Build status](https://ci.appveyor.com/api/projects/status/3ip6tk8i3s277474/branch/master?svg=true)](https://ci.appveyor.com/project/kbilsted/autohasher/branch/master)
+[![Nuget](https://img.shields.io/nuget/dt/autohasher.svg)](http://nuget.org/packages/autohasher)
+[![Nuget](https://img.shields.io/nuget/v/autohasher.svg)](http://nuget.org/packages/autohasher)
+[![Nuget](https://img.shields.io/nuget/vpre/autohasher.svg)](http://nuget.org/packages/autohasher)
+
 
 Automatic generation of GetHashCode() methods using on the fly run-time code generation.
 
-Build server status: [![Build status](https://ci.appveyor.com/api/projects/status/3ip6tk8i3s277474/branch/master?svg=true)](https://ci.appveyor.com/project/kbilsted/autohasher/branch/master)
 
 # 1. Advantages
 
@@ -15,10 +19,9 @@ Using this framework is a real treat. Here is what you get:
 * Automatic null handling.
 * Use the same implementation everywhere. Set up your editor to automatically insert the GetHashCode() when creating new classes. 
 
-2. Usage
-=========
+# 2. Usage
 
-1. Define a class
+### 1. Define a class
 
 ```C#
 class Foo
@@ -34,7 +37,7 @@ class Foo
 }
 ```
   
-2. Implement the GetHashCode() the same way for all classes
+### 2. Implement the GetHashCode() the same way for all classes
     
 ```C#
 public override int GetHashCode()
@@ -43,7 +46,7 @@ public override int GetHashCode()
 }
 ```  
 
-3. Check that it works
+### 3. Check that it works
 
 ```C#
 [TestFixture]
