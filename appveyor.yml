@@ -28,6 +28,16 @@ build:
 #  verbosity: minimal
   verbosity: detailed
  
+environment:
+    COVERALLS_REPO_TOKEN: 
+      secure: wW32TK+eBM0DYSJCf2YQFGuIpbRp3cWSeVEpa8qLh4jOUULGsLSytcI/aEZNrEza
+
+
+after_test: 
+    - packages\OpenCover.4.5.3522\OpenCover.Console.exe -register:user -filter:"+[AutoHasher]*" -target:"packages\NUnit.Runners.2.6.4\tools\nunit-console.exe" -targetargs:"StatePrinter.Tests\bin\debug\AutoHasher.Tests.dll /domain:single /noshadow" -output:"coverage.xml"
+
+    - packages\coveralls.io.1.1.86\tools\coveralls.net.exe --opencover "coverage.xml"
+    
 
 
 before_deploy:
