@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>AutoHasher</id>
+    <version>0.0</version>
+    <authors>Kasper B. Graversen</authors>
+    <owners>Kasper B. Graversen</owners>
+    <licenseUrl>https://raw.githubusercontent.com/kbilsted/AutoHasher/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/kbilsted/AutoHasher</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>...</description>
+    <releaseNotes>...</releaseNotes>
+    <copyright>Copyright 2014-2015</copyright>
+    <tags>GetHashCode Hash Hashing RunTimeCodeGeneration</tags>
+  </metadata>
+</package>
