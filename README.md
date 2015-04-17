@@ -13,7 +13,7 @@ Automatic generation of GetHashCode() methods using on the fly run-time code gen
 
 Using this framework is a real treat. Here is what you get:
 
-* *Productivity!* You are guaranteed to generate a sound hash code. No more forgetting to update your hash code methods when adding or removing fieds from your classes!
+* *Productivity!* You are guaranteed to generate a sound hash code. No more forgetting to update your hash code methods when adding or removing fields from your classes!
 * This framework run-time generates code thay is *as fast as hand coded implementations. Sometimes even faster* since we utilize som optimization tricks. 
 * You are automatically ensured to following *best practices*- such as calculating inside an 'unchecked' block.
 * Automatic null handling.
