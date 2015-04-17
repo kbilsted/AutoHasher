@@ -1,5 +1,7 @@
 # AutoHasher
 
+[![Join the chat at https://gitter.im/kbilsted/AutoHasher](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kbilsted/AutoHasher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build status](https://ci.appveyor.com/api/projects/status/3ip6tk8i3s277474/branch/master?svg=true)](https://ci.appveyor.com/project/kbilsted/autohasher/branch/master)
 [![Nuget](https://img.shields.io/nuget/dt/autohasher.svg)](http://nuget.org/packages/autohasher)
 [![Nuget](https://img.shields.io/nuget/v/autohasher.svg)](http://nuget.org/packages/autohasher)
