@@ -16,8 +16,8 @@ Automatic generation of GetHashCode() methods using on the fly run-time code gen
 Using this framework is a real treat. Here is what you get:
 
 * *Productivity!* You are guaranteed to generate a sound hash code. No more forgetting to update your hash code methods when adding or removing fields from your classes!
-* This framework run-time generates code thay is *as fast as hand coded implementations. Sometimes even faster* since we utilize som optimization tricks. 
-* You are automatically ensured to following *best practices*- such as calculating inside an 'unchecked' block.
+* This framework run-time generates code that is *as fast as hand coded implementations. Sometimes even faster* since we utilize some optimization tricks. 
+* You are automatically ensured to follow *best practices*- such as calculating inside an 'unchecked' block.
 * Automatic null handling.
 * Use the same implementation everywhere. Set up your editor to automatically insert the GetHashCode() when creating new classes. 
 
@@ -26,9 +26,10 @@ Using this framework is a real treat. Here is what you get:
 ### 1. Define a class
 
 ```C#
+using AutoHash;
+using AutoHash.Attributes;
 class Foo
 {
-  internal string field1 = "foo";
   internal string field1 = "foo";
   internal int bar = 42;
   internal List<int> l1 = null;
@@ -39,7 +40,7 @@ class Foo
 }
 ```
   
-### 2. Implement the GetHashCode() the same way for all classes
+### 2. Implement GetHashCode() the same way for all classes
     
 ```C#
 public override int GetHashCode()
@@ -70,6 +71,6 @@ class UsageTest
 }
 ```
 
-Notice that the field 'nonHashed' is not part of the hash code, and the collections are only participating with they length.
+Notice that the field 'nonHashed' is not part of the hash code, and the collections are only participating with their length.
 
 
