@@ -13,4 +13,7 @@
     <copyright>Copyright 2014-2015</copyright>
     <tags>GetHashCode Hash Hashing RunTimeCodeGeneration</tags>
   </metadata>
+  <files>
+    <file src="bin\$configuration$\$id$.dll" target="lib\net40\" />
+  </files>
 </package>
