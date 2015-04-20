@@ -1,0 +1,1 @@
+packages\OpenCover.4.5.3522\OpenCover.Console.exe -register:user -filter:"+[AutoHash]*" -target:".\packages\NUnit.Runners.2.6.4\tools\nunit-console.exe" "-targetargs:AutoHasher.Test\bin\debug\AutoHasher.Test.dll /nologo /domain:single /noshadow" -output:coverage.xml -log:all

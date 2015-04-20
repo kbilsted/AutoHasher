@@ -32,7 +32,7 @@ namespace AutoHash.Test
   [TestFixture]
   internal class TimingTests
   {
-    const int N = 200000;
+      const int N = 2;//200000;
     Random rnd;
 
     [SetUp]
