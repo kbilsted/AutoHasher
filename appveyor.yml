@@ -25,6 +25,7 @@ install:
 
 build:
   project: Autohasher.sln
+  publish_nuget: true             # package projects with .nuspec files and push to artifacts
   verbosity: minimal
 #  verbosity: detailed
  
@@ -39,10 +40,10 @@ after_test:
     - packages\coveralls.io.1.3.4\tools\coveralls.net.exe --opencover "coverage.xml"
     
 
-
-before_deploy:
-  - nuget pack AutoHasher.nuspec -Version "%APPVEYOR_BUILD_VERSION%"
-  - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
+#
+#before_deploy:
+#  - nuget pack AutoHasher.nuspec -Version "%APPVEYOR_BUILD_VERSION%"
+#  - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
 deploy:
   - provider: NuGet
