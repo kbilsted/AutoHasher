@@ -26,6 +26,7 @@ install:
 build:
   project: Autohasher.sln
   publish_nuget: true             # package projects with .nuspec files and push to artifacts
+  publish_nuget_symbols: true
   verbosity: minimal
 #  verbosity: detailed
  
@@ -49,4 +50,3 @@ deploy:
   provider: NuGet
   api_key:
      secure: iilt+MH/q6fzDsdRndFHjE9WawMnZAiGfcNfeRYf90R0Q2e50nUM8SZMfW2xgvBm
-  skip_symbols: false
