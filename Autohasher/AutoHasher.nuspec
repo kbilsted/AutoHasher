@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>AutoHasher</id>
-    <version>0.1.0</version>
+    <version>$version$</version>
     <authors>Kasper B. Graversen</authors>
     <owners>Kasper B. Graversen</owners>
     <licenseUrl>https://raw.githubusercontent.com/kbilsted/AutoHasher/master/LICENSE.md</licenseUrl>
